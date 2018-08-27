@@ -1,6 +1,7 @@
 /**
  * Created by ly on 2018/8/27.
  * 手动实现bind方法
+ * 返回的是一个函数
  */
 Function.prototype.oBind = function(obj) {
     //因为this不能作为左值被赋值，所以借助apply将this更改
