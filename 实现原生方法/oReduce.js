@@ -11,7 +11,7 @@ Array.prototype.oReduce =  function oReduce(fn,initValue) {
         index = 1;
     }
     while(arr.length > 1){
-        newValue = fn.call(null,arr[0],arr[1],index,initArr);
+        newValue = fn(arr[0],arr[1],index,initArr);
         index++;
         arr.splice(0,2,newValue);
     }
